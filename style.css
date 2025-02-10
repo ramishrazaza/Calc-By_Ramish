@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #010736, #586980);
+}
+
+.calculator{
+    
+    position: absolute;
+    left: 100px;
+    border: 1px solid #ffffff;
+    height: 700px;
+    width: 420px;
+    padding: 20px;
+    border-radius: 50px;
+    background: #0b0f31;
+    box-shadow: 0px 20px 50px rgba(149, 160, 169, 0.5);
+    transition: transform 1s ease, box-shadow 1s ease;
+}
+
+.calculator:hover {
+    transform: scale(1.06);
+    box-shadow: 0px 20px 50px rgb(103, 155, 198);
+}
+
+
+input{
+    position: relative;
+    top: 70px;
+    width: 350px;
+    border: none;
+    padding: 24px;
+    margin: 10px;
+    background: transparent;
+    box-shadow: 0px 3px 15px rgbs(84, 84, 84, 0.1);
+    font-size: 40px;
+    text-align: right;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+input::placeholder{
+    color: #ffffff;
+}
+
+button{
+  align-content: center;
+    position: relative;
+    top: 120px;
+    border: none;
+    width: 70px;
+    height: 60px;
+    margin: 10px;
+    border-radius: 30%;
+    background: #0d3060;
+    color: #80c0ff;
+    font-size: 29px;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+}
+
+button:active {
+    background-color: rgb(13, 119, 164);
+}
+.ac{
+    background-color: #515464;
+    color: aqua;
+}
+.op{
+    background-color: #1b34c6;
+    color: aquamarine;
+}
+.equalBtn{
+    background-color: #0080ff;
+    color:rgb(108, 255, 255)
+    
+}
+.equalBtn:active{
+    background-color: #ffffff;
+}
+.name{
+    position: fixed;
+    right: 200px;
+    top: 260px;
+    color: #b0dbf5;
+    font-size: 18px;
+    transition: transform 1s ease, color 1s ease, text-shadow 1s ease;
+    text-shadow: 2px 2px 4px rgba(9, 37, 85, 0.5);
+}
+
+.name:hover {
+    transform: scale(1.2);
+    color: #268fff;
+    text-shadow: 2px 2px 4px rgba(9, 33, 58, 0.7), 2px 2px 4px rgba(14, 70, 138, 0.7);
+}
+
+
+
+
+
+
+
+
+
+
+
+ul {
+    position: fixed;
+    right: 280px;
+    list-style: none;
+  }
+  
+  .example-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .example-2 .icon-content {
+    margin: 0 10px;
+    position: relative;
+  }
+  .example-2 .icon-content .tooltip {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 5px;
+    opacity: 0;
+    visibility: hidden;
+    font-size: 14px;
+    transition: all 0.3s ease;
+  }
+  .example-2 .icon-content:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+    top: -50px;
+  }
+  .example-2 .icon-content a {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: #4d4d4d;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+  }
+  .example-2 .icon-content a:hover {
+    box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%);
+  }
+  .example-2 .icon-content a svg {
+    position: relative;
+    z-index: 1;
+    width: 30px;
+    height: 30px;
+  }
+  .example-2 .icon-content a:hover {
+    color: white;
+  }
+  .example-2 .icon-content a .filled {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #000;
+    transition: all 0.3s ease-in-out;
+  }
+  .example-2 .icon-content a:hover .filled {
+    height: 100%;
+  }
+  
+  .example-2 .icon-content a[data-social="linkedin"] .filled,
+  .example-2 .icon-content a[data-social="linkedin"] ~ .tooltip {
+    background-color: #0274b3;
+  }
+  
+  .example-2 .icon-content a[data-social="github"] .filled,
+  .example-2 .icon-content a[data-social="github"] ~ .tooltip {
+    background-color: #24262a;
+  }
+  .example-2 .icon-content a[data-social="instagram"] .filled,
+  .example-2 .icon-content a[data-social="instagram"] ~ .tooltip {
+    background: linear-gradient(
+      45deg,
+      #405de6,
+      #5b51db,
+      #b33ab4,
+      #c135b4,
+      #e1306c,
+      #fd1f1f
+    );
+  }
+  
+  
